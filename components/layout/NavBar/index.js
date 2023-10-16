@@ -32,7 +32,7 @@ const NavBar = () => {
           </div>
           <div style={{ marginRight: 100}}>
             <StyledLink
-              href="/"
+              href="./institutional"
               style={{ color: "#f7f7f7", fontSize: "16px", marginRight: 16 }}
             >
               Quem somos

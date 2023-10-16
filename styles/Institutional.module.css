@@ -1,0 +1,62 @@
+.carousel{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5rem;
+    margin-top: 1rem;
+}
+
+.screen{
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    margin-left: 2rem;
+}
+
+.generatePatron1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 64rem;
+    height: 5rem;
+    padding: 0.5rem 1rem;
+    justify-content: flex-start;
+    margin-bottom: 2rem;
+    background-color: #00B59F;
+    border-radius: 10px;
+}
+
+.generatePatron2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 64rem;
+    height: 5rem;
+    padding: 0.5rem 1rem;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    background-color: #00844D;
+    border-radius: 10px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.contentText{
+    color: #fff;
+    padding: 0 1rem;
+}
+.image{
+    padding: 0 1rem;
+}
