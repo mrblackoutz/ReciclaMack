@@ -1,4 +1,5 @@
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
+import { Image } from "../../components/Image";
 
 export default function Evento(props) {
     let lado = "row";
@@ -9,27 +10,27 @@ export default function Evento(props) {
             display={"flex"}
             flexDirection={lado}
             alignItems={"center"}
-            height={"50vh"}
+            height={{xs:"40vh", md:"50vh"}}
 
         >
             <Box
-                width={"50%"}
+                width={{md:"50%"}}
                 display={"flex"}
                 flexDirection={"column"}
             >
-                <h1>{props.titulo}</h1>
-                <p style={{margin: "0"}}><b>data:</b> {props.data}</p>
-                <p style={{margin: "0"}}><b>hora:</b> {props.hora}</p>
-                <p style={{margin: "0"}}><b>local:</b> {props.local}</p>
-                <p><b>descrição:</b> {props.descricao}</p>
+                <Typography fontWeight={"1000"} fontSize={{xs:"1.5rem",md:"2rem"}} marginBottom={{xs:".3rem"}}>{props.titulo}</Typography>
+                <Typography margin= "0" fontSize={{xs:"0.8rem", md: "1rem"}}><b>data:</b> {props.data}</Typography>
+                <Typography margin= "0" fontSize={{xs:"0.8rem", md: "1rem"}}><b>hora:</b> {props.hora}</Typography>
+                <Typography margin= "0" fontSize={{xs:"0.8rem", md: "1rem"}}><b>local:</b> {props.local}</Typography>
+                <Typography fontSize={{xs:"0.8rem", md: "1rem"}} marginTop={{xs:".3rem"}}><b>descrição:</b> {props.descricao}</Typography>
             </Box>
-            <Box width={"10%"}></Box>
-            <img src={props.imagem} alt={props.titulo} style={{
-                width: "50%",
-                height: "40vh",
-                objectFit: "cover",
-                borderRadius: "1rem"
-            }}/>
+            <Box width={{xs:"10vw", md:"10%"}}></Box>
+            <Image src={props.imagem} alt={props.titulo}
+                width= {{xs:"50vw", md:"50%"}}
+                objectFit= "cover"
+                borderRadius= "1rem"
+                height= {{xs:"25vh", md:"40vh"}}
+            />
         </Box>
 
     )

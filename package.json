@@ -3,6 +3,7 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev",
+    "host": "next dev -H",
     "start": "next start"
   },
   "dependencies": {
